@@ -85,6 +85,7 @@ class ParentToNearestBone(bpy.types.Operator):
     """
     bl_idname = 'object.parent_to_nearest_bone'
     bl_label = 'Parent to Nearest Bone'
+    bl_options = {'REGISTER', 'UNDO'}
 
     @classmethod
     def poll(cls, context):
